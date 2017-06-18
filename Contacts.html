@@ -1,0 +1,30 @@
+
+<div ng-controller="ContactsController">
+<!--<h1>Contacts Page</h1>-->
+
+<div class="contactsTitle">All Accounts > Create New Contact</div>
+
+<div class="contactsHeading">
+<div style="float:left"><h3>Create New Contact</h3></div>
+<div class="top-right">
+<span>STEP</span>
+<span class="colourthree">3</span>
+<span>/3</span>
+</span</div>
+</div>
+
+
+<div class="inputDiv">
+<label>Assign SBU</label> 
+ <select  ng-model="sbuName" ng-options="name for name in SbuNames">
+<!--<option ng-repeat="name in SbuNames">{{name}}</option>-->
+</select>{{sbuName}}  
+
+</div>
+
+<div class="buttns">
+<button type="reset"  class="cancel">BACK</button> 
+<button type="submit" class="submit" ng-click=finish(sbuName)>FINISH</button>
+</div>
+
+</div>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+  <title>Test Example</title>
+  
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js"></script>
+
+
+<body >
+
+
+<div>
+<div>
+<div class="navbar">
+  
+    <div class="navbar-header">
+      <!--<a class="navbar-brand" href="#"><img src="F:\MDN_TEST\MDN_Test\headerlogo.png"></img>WebSiteName</a>-->
+    </div>
+   
+	
+     <div >
+        <input type="text" name="searchbar" class="text-style-search" placeholder="Search for Accounts,Resources,SBUs">
+		 
+	 <div class="belldiv"><span>S</span> </div>
+	 
+	 <div class="nameicon"></div>
+	 
+	 </div>
+	 
+      </div>
+	  
+	  
+	  
+	
+  
+
+</div>
+
+
+
+<div class="sidenav">
+<ul>
+<li><a  href="#home"><img src="..\test-1\assets-svg\ic-home-black-24-px.svg"></img><span>Home</span></a></li>
+<li><a href="#/sbus"><img src="..\test-1\assets-svg\ic-recent-actors-black-24-px.svg"></img><span>SBUs</span></a> </li>
+<li><a href="#accounts"><img src="..\test-1\assets-svg\ic-account-balance-black-24-px-1.svg"></img><span>Accounts</span></a></li>
+<li><a href="#contacts"><img src="..\test-1\assets-svg/ic-local-library-black-24-px.svg"></img><span>Contacts</span></a></li>
+<li><a href="#resources"><img src="..\test-1\assets-svg/ic-supervisor-account-black-24-px.svg"></img><span>Resources</span></a></li>
+
+</ul>
+
+</div>
+<div id="viewpage">
+<!--<h1>Main Div</h1>-->
+<!--<div id="viewpages" >-->
+ <!--<p>yellow heres</p>-->
+<div ng-view></div>
+<!--</div>-->
+</div>
+
+</div>
+<script src="controller.js"></script>
+
+</body>
+
+</html>
